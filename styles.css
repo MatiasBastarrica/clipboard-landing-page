@@ -69,6 +69,12 @@ h1 {
   font-size: 1.8rem;
 }
 
+.subtitle,
+p {
+  line-height: 1.6;
+  font-size: 0.935rem;
+}
+
 body {
   font-family: var(--ff-bai-jamjuree);
   font-weight: var(--fw-400);
@@ -103,8 +109,6 @@ main {
 
 .hero-section .subtitle {
   margin-top: 1rem;
-  line-height: 1.6;
-  font-size: 0.935rem;
 }
 
 .btn-container {
@@ -117,11 +121,41 @@ main {
 .ios-btn {
   --bg-btn: var(--primary-green-500);
   box-shadow: 0px 3px hsl(171, 68%, 33%);
-  filter: drop-shadow(0px 2px 6px var(--primary-green-500));
+  /* filter: drop-shadow(0px 2px 6px var(--primary-green-500)); */
 }
 
 .mac-btn {
   --bg-btn: var(--primary-blue-100);
   box-shadow: 0px 3px hsl(233, 46%, 45%);
-  filter: drop-shadow(0px 2px 6px var(--primary-blue-100));
+  /* filter: drop-shadow(0px 2px 6px var(--primary-blue-100)); */
+}
+
+/* ## SNIPPETS SECTION ## */
+
+.snippets-section {
+  margin-top: 10rem;
+}
+
+.snippets-section .subtitle {
+  margin-top: 1rem;
+  font-size: 0.935rem;
+}
+
+.floating-section {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.snippets-container {
+  text-align: center;
+}
+
+.snippets-container > li + li {
+  margin-top: 3rem;
+}
+
+.snippets-container li > p {
+  margin-top: 0.8rem;
 }
