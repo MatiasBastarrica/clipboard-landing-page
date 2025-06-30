@@ -159,3 +159,13 @@ main {
 .snippets-container li > p {
   margin-top: 0.8rem;
 }
+
+/* ## CLIPBOARD SECTION ## */
+
+.clipboard-section {
+  margin-top: 10rem;
+}
+
+.clipboard-section img {
+  margin-top: 3.5rem;
+}
