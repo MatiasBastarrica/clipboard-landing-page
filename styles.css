@@ -195,6 +195,9 @@ main {
 .workflow-list {
   margin-top: 5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .workflow-list h3 {
@@ -207,10 +210,6 @@ main {
 
 .workflow-list img {
   margin-inline: auto;
-}
-
-.workflow-list > li + li {
-  margin-top: 3rem;
 }
 
 .workflow-section .subtitle {
@@ -322,5 +321,54 @@ footer i {
 
   .clipboard-section img {
     margin-top: 6rem;
+  }
+
+  .workflow-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+    max-width: 1400px;
+    margin-inline: auto;
+  }
+
+  .workflow-list > * {
+    flex: 1;
+  }
+
+  .companies-section {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .companies-section ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding-inline: 9em;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .footer-logo,
+  .socials-container {
+    align-self: center;
+  }
+
+  .footer-logo {
+    margin-right: 4em;
+  }
+
+  .socials-container {
+    margin: unset;
+    width: unset;
+    margin-inline-start: auto;
   }
 }
