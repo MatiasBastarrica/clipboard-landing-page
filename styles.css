@@ -372,3 +372,13 @@ footer i {
     margin-inline-start: auto;
   }
 }
+
+/* ### ACTIVE STATES ### */
+
+a.btn:hover {
+  filter: opacity(70%);
+}
+
+.ft-item a:hover {
+  color: var(--primary-green-500);
+}
