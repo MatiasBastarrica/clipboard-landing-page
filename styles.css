@@ -14,3 +14,18 @@
   --fw-400: 400;
   --fw-600: 600;
 }
+
+/* ### GENERAL STYLING ### */
+
+h1,
+h2,
+h3 {
+  color: var(--neutral-gray-700);
+}
+
+body {
+  font-family: var(--ff-bai-jamjuree);
+  font-weight: var(--fw-400);
+  font-size: 1.125rem;
+  color: var(--neutral-gray-500);
+}
