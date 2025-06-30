@@ -38,6 +38,15 @@ footer a {
   text-decoration: none;
 }
 
+/* ### UTILITY CLASSES ### */
+
+.center {
+  width: 100%;
+  max-width: var(--container-width, 900px);
+  margin-inline: auto;
+  text-align: center;
+}
+
 /* ### GENERAL STYLING ### */
 
 h1,
