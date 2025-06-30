@@ -196,3 +196,16 @@ main {
 .workflow-list > li + li {
   margin-top: 3rem;
 }
+
+/* ## COMPANIES SECTOIN ## */
+
+.companies-section {
+  margin-top: 10rem;
+}
+
+.companies-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
