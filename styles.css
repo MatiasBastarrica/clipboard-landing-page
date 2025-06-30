@@ -209,3 +209,13 @@ main {
   gap: 4rem;
   align-items: center;
 }
+
+/* ## CTA SECTION ## */
+
+.cta-section {
+  margin-top: 10rem;
+}
+
+.cta-section .subtitle {
+  margin-top: 1rem;
+}
