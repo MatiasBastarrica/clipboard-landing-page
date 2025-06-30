@@ -66,13 +66,21 @@ h3 {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 1.4479rem + 1.5023vw, 2.8rem);
+}
+
+h2 {
+  font-size: clamp(1.6875rem, 1.4454rem + 1.0329vw, 2.375rem);
+}
+
+h3 {
+  font-size: clamp(1.3163rem, 1.1459rem + 0.7268vw, 1.8rem);
 }
 
 .subtitle,
 p {
   line-height: 1.6;
-  font-size: 0.935rem;
+  font-size: clamp(0.935rem, 0.7977rem + 0.5859vw, 1.325rem);
 }
 
 body {
@@ -139,7 +147,6 @@ main {
 
 .snippets-section .subtitle {
   margin-top: 1rem;
-  font-size: 0.935rem;
 }
 
 .floating-section {
@@ -149,12 +156,15 @@ main {
   gap: 3.5rem;
 }
 
-.snippets-container {
-  text-align: center;
+.floating-section img {
+  margin-inline: auto;
 }
 
-.snippets-container > li + li {
-  margin-top: 3rem;
+.snippets-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .snippets-container li > p {
@@ -169,6 +179,11 @@ main {
 
 .clipboard-section img {
   margin-top: 3.5rem;
+  margin-inline: auto;
+}
+
+.clipboard-section .subtitle {
+  margin-top: 1rem;
 }
 
 /* ## WORKFLOW SECTION ## */
@@ -196,6 +211,10 @@ main {
 
 .workflow-list > li + li {
   margin-top: 3rem;
+}
+
+.workflow-section .subtitle {
+  margin-top: 1rem;
 }
 
 /* ## COMPANIES SECTOIN ## */
@@ -261,4 +280,47 @@ footer img {
 
 footer i {
   font-size: 1.8rem;
+}
+
+/* ### DESKTOP LAYOUT ### */
+
+@media (min-width: 50em) {
+  .subtitle,
+  p {
+    line-height: 1.4;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  a.btn {
+    padding-inline: 2.6rem;
+  }
+
+  main {
+    --max-width: 850px;
+  }
+
+  .snippets-container {
+    text-align: start;
+    max-width: 40ch;
+    justify-content: center;
+  }
+
+  .floating-section img {
+    margin-inline: unset;
+  }
+
+  .floating-section {
+    margin-inline-start: -3.775rem;
+    gap: 5rem;
+    flex-direction: row;
+  }
+
+  .clipboard-section img {
+    margin-top: 6rem;
+  }
 }
