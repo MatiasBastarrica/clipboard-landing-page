@@ -169,3 +169,30 @@ main {
 .clipboard-section img {
   margin-top: 3.5rem;
 }
+
+/* ## WORKFLOW SECTION ## */
+
+.workflow-section {
+  margin-top: 6rem;
+}
+
+.workflow-list {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.workflow-list h3 {
+  margin-top: 2.5rem;
+}
+
+.workflow-list p {
+  margin-top: 1rem;
+}
+
+.workflow-list img {
+  margin-inline: auto;
+}
+
+.workflow-list > li + li {
+  margin-top: 3rem;
+}
