@@ -41,10 +41,19 @@ footer a {
 /* ### UTILITY CLASSES ### */
 
 .center {
-  width: 100%;
-  max-width: var(--container-width, 900px);
+  width: var(--width, 90%);
+  max-width: var(--max-width, 900px);
   margin-inline: auto;
   text-align: center;
+}
+
+a.btn {
+  background-color: var(--bg-btn);
+  display: inline-block;
+  padding: 0.7em 1em;
+  color: white;
+  font-weight: var(--fw-600);
+  border-radius: 200px;
 }
 
 /* ### GENERAL STYLING ### */
@@ -53,6 +62,11 @@ h1,
 h2,
 h3 {
   color: var(--neutral-gray-700);
+  font-weight: var(--fw-600);
+}
+
+h1 {
+  font-size: 1.8rem;
 }
 
 body {
@@ -72,3 +86,42 @@ body {
 }
 
 /* ### MAIN ### */
+
+main {
+  padding: 8rem 1.775rem;
+}
+
+/* ## HERO SECTION ## */
+
+.hero-section img {
+  margin-inline: auto;
+}
+
+.hero-section h1 {
+  margin-top: 4rem;
+}
+
+.hero-section .subtitle {
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-size: 0.935rem;
+}
+
+.btn-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ios-btn {
+  --bg-btn: var(--primary-green-500);
+  box-shadow: 0px 3px hsl(171, 68%, 33%);
+  filter: drop-shadow(0px 2px 6px var(--primary-green-500));
+}
+
+.mac-btn {
+  --bg-btn: var(--primary-blue-100);
+  box-shadow: 0px 3px hsl(233, 46%, 45%);
+  filter: drop-shadow(0px 2px 6px var(--primary-blue-100));
+}
