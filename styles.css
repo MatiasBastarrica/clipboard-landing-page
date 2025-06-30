@@ -60,4 +60,15 @@ body {
   font-weight: var(--fw-400);
   font-size: 1.125rem;
   color: var(--neutral-gray-500);
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
 }
+
+@media (min-width: 23.438em) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: contain;
+  }
+}
+
+/* ### MAIN ### */
