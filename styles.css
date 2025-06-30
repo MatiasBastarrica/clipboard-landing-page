@@ -121,13 +121,11 @@ main {
 .ios-btn {
   --bg-btn: var(--primary-green-500);
   box-shadow: 0px 3px hsl(171, 68%, 33%);
-  /* filter: drop-shadow(0px 2px 6px var(--primary-green-500)); */
 }
 
 .mac-btn {
   --bg-btn: var(--primary-blue-100);
   box-shadow: 0px 3px hsl(233, 46%, 45%);
-  /* filter: drop-shadow(0px 2px 6px var(--primary-blue-100)); */
 }
 
 /* ## SNIPPETS SECTION ## */
@@ -218,4 +216,46 @@ main {
 
 .cta-section .subtitle {
   margin-top: 1rem;
+}
+
+/* ### FOOTER ### */
+
+footer {
+  margin-top: 10rem;
+  padding: 3rem 1rem;
+  background-color: rgba(213, 213, 213, 0.409);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.8rem;
+  font-weight: var(--fw-600);
+  color: var(--neutral-gray-700);
+}
+
+.ft-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+footer img {
+  width: 60px;
+}
+
+.socials-container {
+  margin-top: 1.5rem;
+  width: 50%;
+  margin-inline: auto;
+  align-self: stretch;
+}
+
+.socials-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer i {
+  font-size: 1.8rem;
 }
